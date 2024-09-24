@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .left_side {
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profileText .imgBx {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profileText h2 span {
+    font-size: 0.8em;
+    font-weight: 200;
+}
+
+.contactInfo {
+    background-color: #0077b5; /* Change to a prominent color */
+    color: white; /* Change text color to white for contrast */
+    padding: 15px;
+    border-radius: 5px; /* Optional: round the corners */
+    margin-bottom: 20px; /* Add some space below the contact info */
+}
+.title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul {
+    position: relative;
+}
+
+.contactInfo ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center; 
+}
+
+.contactInfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+    margin-right: 10px; 
+}
+
+.contactInfo ul li .text {
+    color: #fff;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+
+.contactInfo ul li span {
+    color: #fff;
+    font-weight: 300;
+}
+
+.contactInfo.education ul {
+    padding: 0;
+    margin: 0;
+}
+
+.contactInfo.education li {
+    margin-bottom: 20px; /* Space between each entry */
+    list-style: none;
+}
+
+.contactInfo.education h5 {
+    color: #03a9f4; /* Color for the year */
+    font-weight: 500;
+    margin: 0; /* No margin for alignment */
+}
+
+.contactInfo.education h4 {
+    color: #fff; /* Color for the degree and institution */
+    font-weight: 500;
+    margin: 5px 0; /* Space between each line */
+}
+
+.contactInfo.education li h4:last-child {
+    font-size: 0.9em; /* Slightly smaller for the institution */
+    color: #ccc; /* Lighter color for institution */
+    margin-top: 5px; /* Space before the institution */
+}
+
+
+
+.contactInfo.language ul li {
+    margin-bottom: 20px;
+}
+
+.contactInfo.language ul li .text {
+    display: inline-block;
+    width: 80px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.contactInfo.language ul li .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: black;
+    display: block;
+    margin-top: 5px;
+}
+
+.contactInfo.language ul li .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.container .right_side {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.about
+{
+    margin-bottom: 20px;
+}
+.about:last-child
+{
+    margin-bottom: 0;
+}
+.title2
+{
+    color:#003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p
+{
+    color: #333;
+}
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    justify-content: space-between; /* Space between year/company and text */
+}
+
+.about .box .year_company {
+    min-width: 150px;
+}
+
+.about .box .year_company h5 {
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+.about .box .text h4 {
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        grid-template-columns: repeat(1,1fr);
+        margin: 10px; 
+    }
+
+    .contactInfo, .about {
+        padding: 20px; 
+    }
+}
+.contactInfo ul li:hover {
+    background-color: rgba(3, 169, 244, 0.1); /* Light blue background on hover */
+    transition: background-color 0.3s ease;
+}
+.Skills {
+    margin-top: 20px;
+}
+
+.skill-box {
+    display: flex; /* Align items in a row */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 15px; /* Space between each skill */
+}
+
+.skill-box h4 {
+    width: 100px; /* Fixed width for skill names */
+    margin-right: 10px; /* Space between name and bar */
+}
+
+.skill-bar {
+    flex-grow: 1; /* Allow the bar to expand */
+    height: 8px; /* Consistent height for the bar */
+    background: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.skill-percentage {
+    height: 100%;
+    background: linear-gradient(90deg, #4caf50, #81c784);
+    border-radius: 25px;
+    transition: width 0.4s ease;
+}
+.interest ul {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-around; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allow wrapping if there's not enough space */
+}
+
+.interest ul li {
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px; /* Add some margin around each icon */
+    text-align: center; /* Center text under the icons if needed */
+}
+
+.interest ul li {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-bottom: 10px; /* Space between each interest */
+}
+
+.interest ul li i {
+    margin-right: 8px; /* Space between the icon and the text */
+    font-size: 20px; /* Optional: Adjust icon size */
+}
+.about.interest {
+    margin-top: 100px; /* Adjust this value to increase or decrease spacing */
+}
+
+.interest ul li .fa {
+    color: #03a9f4;
+    font-size: 24px; /* Increase size for better visibility */
+}
+
+.interest ul
+{
+    grid-template-columns: repeat(2,1fr);
+}
+@media (max-width: 1000px)
+{
+    .about .box
+    {
+        flex-direction: column;
+    }
+    .about .box .year_company
+    {
+        margin-bottom: 5px;
+    }
+    .interest ul
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skill .box
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+.about.interest ul {
+    display: flex; /* Use flexbox to arrange items in a row */
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.about.interest ul li {
+    margin-right: 20px; /* Space between items */
+    display: flex; /* Ensure icons and text align properly */
+    align-items: center; /* Center items vertically */
+}
+.Skills {
+    margin-top: 40px; /* Adjust the value as needed */
+}
+
+.interest {
+    margin-top: 20px; /* Optional: Add margin to the interest section for consistency */
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    color: #555;
+    font-size: 14px;
+    margin-top: 50px; /* Adjust this value to move the footer lower */
+    border-top: 1px solid #ddd;
+    position: relative;
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px; /* Space between entries */
+}
+
+.year_company {
+    flex: 1; /* Allows flexibility in layout */
+}
+
+.text {
+    flex: 2; /* More space for the text */
+}
